@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import { Header, ItemListContainer, Counters, Item, ItemList} from './components';
+import { Header, ItemListContainer, Counters} from './components';
+import { ItemDetailConteiner } from './components/ItemDetailConteiner';
 
 function App() {
   return (
@@ -8,9 +9,10 @@ function App() {
       <Header />
       <main>
       <section className="App-content">        
-        <ItemListContainer greeting={'greeting'}/>
         {/* Contador */}
         <Counters />
+        {/* <ItemListContainer greeting={'greeting'}/> */}
+        <ItemDetailConteiner />
         <img src={logo} className="App-logo" alt="logo" />
         </section>
       </main>
