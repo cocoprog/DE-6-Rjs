@@ -1,6 +1,6 @@
 import Item from "../Item";
 
-const ItemDetail = ({lista}) =>{    
+const ItemDetail = ({lista}) =>{
     return (
     <div>
         {

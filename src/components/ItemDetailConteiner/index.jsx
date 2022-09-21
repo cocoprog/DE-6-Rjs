@@ -13,11 +13,11 @@ export function ItemDetailConteiner (){
         .catch(error => console.log(error));
     },[]);
     
-    const getProducts = new Promise ((resolve, reject) => {
+    const getProducts = new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(data);
-            }, 2000);
-        });
+          resolve([data.find(zapato => zapato.id === 1)])
+        }, 2000)
+      })
     
     return <>
             <ItemDetail lista={productList}/>
